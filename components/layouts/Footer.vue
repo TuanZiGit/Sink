@@ -26,10 +26,10 @@ const { title, email, telegram, blog, twitter, mastodon, github } = useAppConfig
         <a
           v-if="email"
           :href="`mailto:${email}`"
-          title="Email"
+          title="邮箱/Email"
           class="text-gray-400 hover:text-gray-500"
         >
-          <span class="sr-only">Email</span>
+          <span class="sr-only">邮箱/Email</span>
           <GmailIcon
             class="w-6 h-6"
           />
@@ -38,10 +38,10 @@ const { title, email, telegram, blog, twitter, mastodon, github } = useAppConfig
           v-if="telegram"
           :href="telegram"
           target="_blank"
-          title="Telegram"
+          title="电报/Telegram"
           class="text-gray-400 hover:text-gray-500"
         >
-          <span class="sr-only">Telegram</span>
+          <span class="sr-only">电报/Telegram</span>
           <TelegramIcon
             class="w-6 h-6"
           />
@@ -50,10 +50,10 @@ const { title, email, telegram, blog, twitter, mastodon, github } = useAppConfig
           v-if="blog"
           :href="blog"
           target="_blank"
-          title="Blog"
+          title="博客/Blog"
           class="text-gray-400 hover:text-gray-500"
         >
-          <span class="sr-only">Blog</span>
+          <span class="sr-only">博客/Blog</span>
           <BloggerIcon
             class="w-6 h-6"
           />
@@ -63,10 +63,10 @@ const { title, email, telegram, blog, twitter, mastodon, github } = useAppConfig
           v-if="twitter"
           :href="twitter"
           target="_blank"
-          title="Twitter"
+          title="推特/Twitter/X"
           class="text-gray-400 hover:text-gray-500"
         >
-          <span class="sr-only">Twitter</span>
+          <span class="sr-only">推特/Twitter/X</span>
           <XIcon
             class="w-6 h-6"
           />
