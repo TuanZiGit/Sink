@@ -119,7 +119,7 @@ async function onSubmit(formData) {
     toast('短链更新成功')
   }
   else {
-    toast('短链删除成功')
+    toast('短链创建成功')
   }
 }
 

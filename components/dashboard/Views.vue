@@ -59,13 +59,13 @@ function formatTime(tick) {
 <template>
   <Card class="px-0 py-6 md:px-6">
     <CardTitle class="px-6 md:px-0">
-      Views
+      访问
     </CardTitle>
     <component
       :is="chart"
       :data="views"
       index="time"
-      :categories="['visitors', 'visits']"
+      :categories="['访问者', '访问数']"
       :x-formatter="formatTime"
       :y-formatter="formatNumber"
     />
