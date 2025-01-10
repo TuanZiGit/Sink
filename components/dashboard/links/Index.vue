@@ -80,15 +80,15 @@ function updateLinkList(link, type) {
       v-if="!isLoading && listComplete"
       class="flex items-center justify-center text-sm"
     >
-      No more links
+      没有更多了……
     </div>
     <div
       v-if="listError"
       class="flex items-center justify-center text-sm"
     >
-      Loading links failed,
+      加载短链失败！
       <Button variant="link" @click="getLinks">
-        Try again
+        重试
       </Button>
     </div>
   </main>

@@ -67,7 +67,7 @@ onMounted(() => {
           <CommandInput placeholder="Type to search..." />
           <CommandList>
             <CommandEmpty v-if="searchTerm">
-              No links found.
+              没有找到短链 Σ(っ °Д °;)っ
             </CommandEmpty>
             <CommandGroup heading="Links">
               <CommandItem v-for="link in filteredLinks" :key="link.item?.id" class="cursor-pointer" :value="link.item" @select="selectLink(link.item)">
