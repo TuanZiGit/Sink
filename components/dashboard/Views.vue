@@ -12,9 +12,9 @@ const endAt = inject('endAt')
 const OneDay = 24 * 60 * 60 // 1 day in seconds
 function getUnit(startAt, endAt) {
   if (startAt && endAt && endAt - startAt <= OneDay)
-    return 'hour'
+    return '小时'
 
-  return 'day'
+  return '天'
 }
 
 async function getLinkViews() {
@@ -29,8 +29,8 @@ async function getLinkViews() {
     },
   })
   views.value = (data || []).map((item) => {
-    item.visitors = +item.visitors
-    item.visits = +item.visits
+    item.访问者 = +item.visitors
+    item.访问数 = +item.visits
     return item
   })
 }
